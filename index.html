@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tatuajes Frank · Estudio de tatuaje</title>
+<meta name="description" content="Tatuajes personalizados creados con detalle, precisión y una estética cuidada.">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="img/logo.png" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="Tatuajes Frank · Estudio de tatuaje">
+<meta property="og:description" content="Tatuajes personalizados en sombras, negro y escala de grises.">
+<meta property="og:image" content="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <a href="#inicio" class="brand">
+    <img class="brand__logo" src="img/logo-sm.png" srcset="img/logo-sm.png 1x, img/logo.png 3x" width="56" height="56" alt="Logotipo de Tatuajes Frank">
+    <span class="brand__text">
+      <strong>Tatuajes Frank</strong>
+      <small>Tattoo Studio</small>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#portafolio">Portafolio</a>
+    <a href="#estilos">Estilos</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="header__actions">
+    <a href="https://www.tiktok.com/@joelhdztattoos" class="icon-btn" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.500a3.500 3.500 0 1 1-3.500-3.500"/><path d="M14 3c.4 2.600 2.200 4.400 5 4.600"/></svg></a>
+    <a href="https://www.facebook.com/joelhernandez9005" class="icon-btn" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="#contacto" class="btn btn--gold btn--sm">Agenda tu cita</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__shade"></div>
+    <canvas class="hero__dust" id="dust" aria-hidden="true"></canvas>
+
+    <div class="hero__content">
+      <p class="eyebrow"><span class="eyebrow__line"></span>Estudio de tatuaje · Tatuajes Frank</p>
+
+      <h1 class="hero__title">
+        <span class="mask"><span class="mask__in">El arte que</span></span>
+        <span class="mask"><span class="mask__in gold-text">llevas en la piel</span></span>
+      </h1>
+
+      <p class="hero__text">Tatuajes personalizados creados con detalle, precisión y una estética cuidada. Cada diseño se piensa contigo, para que sea tan único como tu historia.</p>
+
+      <div class="hero__cta">
+        <a href="#contacto" class="btn btn--gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+          Agenda tu cita
+        </a>
+        <a href="#portafolio" class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          Ver portafolio
+        </a>
+      </div>
+    </div>
+
+    <a href="#sobre-mi" class="scroll" aria-label="Bajar">
+      <span>Scroll</span>
+      <i></i>
+    </a>
+  </section>
+
+  <section class="about" id="sobre-mi">
+    <div class="about__grid">
+
+      <div class="about__media" data-reveal>
+        <span class="about__bracket" aria-hidden="true"></span>
+        <div class="about__frame">
+          <div class="about__img" id="aboutImg" role="img" aria-label="[NOMBRE DEL ARTISTA], tatuador"></div>
+        </div>
+        <div class="about__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.2L7 22l5-3 5 3-1.5-7.8"/></svg>
+          <strong class="num">10</strong>
+          <span>Años de arte</span>
+        </div>
+      </div>
+
+      <div class="about__body" data-reveal>
+        <p class="eyebrow eyebrow--static"><span class="eyebrow__line"></span>Sobre el tatuador</p>
+        <h2 class="about__title">Sobre [FRANK]</h2>
+
+        <p>Soy tatuador y cada diseño nace de una conversación contigo. Mi trabajo combina técnica, dibujo y sensibilidad para convertir una idea en una pieza única que querrás llevar toda la vida.</p>
+        <p>Me especializo en <strong>realismo</strong>, <strong>blackwork</strong> y <strong>fine line</strong>, cuidando siempre la higiene, tu comodidad y el detalle más pequeño.</p>
+
+        <ul class="stats">
+          <li><strong class="num">[10]</strong><span>Años de experiencia</span></li>
+          <li><strong class="num">[+50]</strong><span>Tatuajes realizados</span></li>
+          <li><strong class="num">[+5]</strong><span>Estilos dominados</span></li>
+        </ul>
+
+        <a href="#portafolio" class="link-arrow">
+          Conoce mi trabajo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="portfolio" id="portafolio">
+    <div class="portfolio__inner">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow eyebrow--static eyebrow--center"><span class="eyebrow__line"></span>Portafolio<span class="eyebrow__line"></span></p>
+        <h2>Trabajos que hablan por sí solos</h2>
+        <p>Una selección de tatuajes realizados en el estudio. Explora por estilo y encuentra la inspiración para tu próxima pieza.</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filtrar por estilo"><button class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button><button class="filter" data-filter="realismo" aria-pressed="false">Realismo</button><button class="filter" data-filter="blackwork" aria-pressed="false">Blackwork</button><button class="filter" data-filter="tradicional" aria-pressed="false">Tradicional</button><button class="filter" data-filter="fine-line" aria-pressed="false">Fine line</button><button class="filter" data-filter="lettering" aria-pressed="false">Lettering</button><button class="filter" data-filter="otros" aria-pressed="false">Otros</button></div>
+
+      <div class="works" id="works">
+        <article class="work" data-cat="realismo" data-src="img/portafolio-1-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Reloj, corona y diamante">
+          <div class="work__img" style="--img:url('img/portafolio-1.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Realismo</small><h3>Reloj, corona y diamante</h3></div>
+        </article>
+        <article class="work" data-cat="realismo" data-src="img/portafolio-2-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Casino: cartas, dados y fichas">
+          <div class="work__img" style="--img:url('img/portafolio-2.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Realismo</small><h3>Casino: cartas, dados y fichas</h3></div>
+        </article>
+        <article class="work" data-cat="lettering" data-src="img/portafolio-3-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Lettering caligráfico">
+          <div class="work__img" style="--img:url('img/portafolio-3.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Lettering</small><h3>Lettering caligráfico</h3></div>
+        </article>
+        <article class="work" data-cat="lettering" data-src="img/portafolio-4-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Lettering con contorno">
+          <div class="work__img" style="--img:url('img/portafolio-4.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Lettering</small><h3>Lettering con contorno</h3></div>
+        </article>
+        <article class="work" data-cat="fine-line" data-src="img/portafolio-5-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Átomo y ecuación">
+          <div class="work__img" style="--img:url('img/portafolio-5.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Fine line</small><h3>Átomo y ecuación</h3></div>
+        </article>
+        <article class="work" data-cat="lettering" data-src="img/portafolio-6-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Corazón con alas y lettering">
+          <div class="work__img" style="--img:url('img/portafolio-6.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Lettering</small><h3>Corazón con alas y lettering</h3></div>
+        </article>
+        <article class="work" data-cat="fine-line" data-src="img/portafolio-7-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Araña colgante">
+          <div class="work__img" style="--img:url('img/portafolio-7.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Fine line</small><h3>Araña colgante</h3></div>
+        </article>
+        <article class="work" data-cat="fine-line" data-src="img/portafolio-9-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Máscaras de teatro">
+          <div class="work__img" style="--img:url('img/portafolio-9.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Fine line</small><h3>Máscaras de teatro</h3></div>
+        </article>
+        <article class="work" data-cat="blackwork" data-src="img/portafolio-10-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Mandala en dotwork">
+          <div class="work__img" style="--img:url('img/portafolio-10.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Blackwork</small><h3>Mandala en dotwork</h3></div>
+        </article>
+        <article class="work" data-cat="fine-line" data-src="img/portafolio-11-full.jpg" tabindex="0" role="button" aria-label="Ampliar: Mano esquelética y frase">
+          <div class="work__img" style="--img:url('img/portafolio-11.jpg')"></div>
+          <span class="work__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          <div class="work__info"><small>Fine line</small><h3>Mano esquelética y frase</h3></div>
+        </article>
+      </div>
+      <p class="works__empty" id="workEmpty" hidden>Pronto sumaremos trabajos de este estilo. Escríbenos si quieres uno.</p>
+
+      <div class="portfolio__cta">
+        <a href="#contacto" class="btn btn--outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 3.8c-5.600-.6-11 2.600-12.700 8.300L5 19.500l1.400-.4c.7-2.300 2.100-3.700 4.300-4.600"/><path d="M8 16c3-.2 7-1.800 9-5.500 1.200-2.200 2.200-4.700 3.200-6.700z"/></svg>
+          Quiero un diseño así
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="styles" id="estilos">
+    <div class="styles__inner">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow eyebrow--static eyebrow--center"><span class="eyebrow__line"></span>Servicios y estilos<span class="eyebrow__line"></span></p>
+        <h2>Encuentra tu estilo</h2>
+        <p>Cada técnica tiene su carácter. Te ayudo a elegir la que mejor cuente tu historia.</p>
+      </header>
+
+      <div class="styles__grid">
+        <article class="style-card">
+          <div class="style-card__img" style="--img:url('img/estilo-sombras.jpg')">
+            <span class="style-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></span>
+          </div>
+          <div class="style-card__body"><h3>Tatuajes en sombras</h3><p>Degradados suaves que dan volumen y profundidad, con transiciones de luz y sombra trabajadas capa por capa.</p></div>
+        </article>
+        <article class="style-card">
+          <div class="style-card__img" style="--img:url('img/estilo-negros.jpg')">
+            <span class="style-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.200 6 10.500a6 6 0 0 1-12 0C6 9.200 12 3 12 3z"/><path d="M12 3v16.500a6 6 0 0 0 6-6C18 9.200 12 3 12 3z" fill="currentColor"/></svg></span>
+          </div>
+          <div class="style-card__body"><h3>Tatuajes en negro</h3><p>Negros sólidos y bien saturados para trazos firmes, contraste alto y un resultado rotundo que envejece bien.</p></div>
+        </article>
+        <article class="style-card">
+          <div class="style-card__img" style="--img:url('img/estilo-grises.jpg')">
+            <span class="style-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.600-7 10-7 10 7 10 7-3.600 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          </div>
+          <div class="style-card__body"><h3>Escala de grises</h3><p>Tonos grises que construyen detalle y realismo, desde retratos hasta texturas, sin una gota de color.</p></div>
+        </article>
+        <article class="style-card style-card--extra">
+          <div class="style-card__img" style="--img:url('img/estilo-domicilio.jpg')">
+            <span class="style-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+            <span class="style-card__tag">Costo extra</span>
+          </div>
+          <div class="style-card__body"><h3>Tatuajes a domicilio</h3><p>Llevo el tatuaje hasta ti: agenda tu sesión en la comodidad de tu casa. Este servicio tiene un costo extra.</p></div>
+        </article>
+      </div>
+
+      <div class="styles__note" data-reveal>
+        <p>Me enfoco en negro y escala de grises. No realizo tatuajes a:</p>
+        <!-- PENDIENTE: confirmar las otras técnicas que no domina ("rotos, rutos") y agregarlas como chips -->
+        <span class="chip">Full color</span>
+        <a href="#contacto" class="link-arrow link-arrow--sm">Cuéntame tu idea
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="proceso">
+    <div class="process__grid">
+      <div class="process__media" data-reveal>
+        <div class="process__frame"><div class="process__img" role="img" aria-label="Interior del estudio"></div></div>
+      </div>
+
+      <div class="process__body" data-reveal>
+        <p class="eyebrow eyebrow--static"><span class="eyebrow__line"></span>Proceso para agendar</p>
+        <h2>Así de simple es empezar</h2>
+        <p class="process__lead">Cuatro pasos y tu idea se convierte en tatuaje.</p>
+
+        <ol class="steps">
+          <li><span class="step__num">01</span><div><h3>Cuéntanos tu idea</h3><p>Escríbenos por WhatsApp o redes sociales y cuéntanos qué quieres tatuarte, con referencias e ideas.</p></div></li>
+          <li><span class="step__num">02</span><div><h3>Revisamos tu diseño</h3><p>Analizamos tu idea, te proponemos un diseño único y ajustamos cada detalle hasta que sea perfecto.</p></div></li>
+          <li><span class="step__num">03</span><div><h3>Definimos fecha y detalles</h3><p>Elegimos juntos el día, el tamaño, la zona del cuerpo, el presupuesto y si será en el estudio o a domicilio.</p></div></li>
+          <li><span class="step__num">04</span><div><h3>Realizamos tu tatuaje</h3><p>El día de la cita creamos tu tatuaje en un espacio limpio, cómodo y totalmente seguro.</p></div></li>
+        </ol>
+
+        <a href="#contacto" class="btn btn--gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+          Quiero agendar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="contact__inner">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow eyebrow--static eyebrow--center"><span class="eyebrow__line"></span>Ubicación y contacto<span class="eyebrow__line"></span></p>
+        <h2>Ven a conocernos</h2>
+        <p>Estamos listos para escucharte. Escríbenos o visítanos y hablemos de tu próximo tatuaje.</p>
+      </header>
+
+      <div class="contact__grid">
+        <div class="contact__info" data-reveal>
+          <div class="info-grid">
+          <a class="info-card" href="https://www.google.com/maps/search/?api=1&query=20.4475564,-103.3054755" target="_blank" rel="noopener">
+            <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.100-7-11.500a7 7 0 0 1 14 0C19 14.900 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+            <small>Ubicación</small>
+            <strong>Isla Miramar, Edificio 18, Interior 8 (departamento)</strong>
+          </a>
+          <div class="info-card">
+            <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <small>Horarios</small>
+            <strong>[Lun - Sáb · 11:00 - 20:00]</strong>
+          </div>
+          <a class="info-card" href="https://wa.me/5213329270119" target="_blank" rel="noopener">
+            <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.650-4.900A9 9 0 1 1 8 19.400L3 21z"/><path d="M9 9.500c0 3 2.500 5.500 5.500 5.500l1.200-1.400-2-1-.9.700a3.200 3.200 0 0 1-1.600-1.600l.7-.9-1-2L9 9.500z"/></svg></span>
+            <small>WhatsApp</small>
+            <strong>+52 1 33 2927 0119</strong>
+          </a>
+          <div class="info-card info-card--social">
+            <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.600 13.500l6.800 4M15.400 6.500l-6.800 4"/></svg></span>
+            <small>Redes sociales</small>
+            <strong class="social-links"><a href="https://www.tiktok.com/@joelhdztattoos" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/joelhernandez9005" target="_blank" rel="noopener">Facebook</a></strong>
+          </div>
+          </div>
+          <div class="contact__cta">
+            <a href="https://wa.me/5213329270119" class="btn btn--gold" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.650-4.900A9 9 0 1 1 8 19.400L3 21z"/><path d="M9 9.500c0 3 2.500 5.500 5.500 5.500l1.200-1.400-2-1-.9.700a3.200 3.200 0 0 1-1.600-1.600l.7-.9-1-2L9 9.500z"/></svg>Escríbenos por WhatsApp</a>
+            <a href="https://www.tiktok.com/@joelhdztattoos" class="btn btn--outline" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.500a3.500 3.500 0 1 1-3.500-3.500"/><path d="M14 3c.4 2.600 2.200 4.400 5 4.600"/></svg>Ver TikTok</a>
+          </div>
+        </div>
+
+        <div class="contact__map" data-reveal>
+          <div class="map-fallback" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.100-7-11.500a7 7 0 0 1 14 0C19 14.900 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
+            <span>Cargando mapa…</span>
+          </div>
+          <iframe title="Ubicación del estudio" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.8833200468266!2d-103.30547550277511!3d20.44755635362022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4fe32fa200ed%3A0x7136bc6ab43e8f30!2sEdificio%2018!5e0!3m2!1ses-419!2smx!4v1791278381466!5m2!1ses-419!2smx"></iframe>
+          <a class="map-open" href="https://www.google.com/maps/search/?api=1&query=20.4475564,-103.3054755" target="_blank" rel="noopener">Abrir en Google Maps
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Siguientes secciones aquí -->
+</main>
+
+<!-- Instagram: no se tenía el usuario. Para agregarlo, duplica cualquier enlace de TikTok en header, contacto y footer y cambia la URL -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid" data-reveal>
+      <div class="footer__brand">
+        <a href="#inicio" class="brand">
+          <img class="brand__logo" src="img/logo-sm.png" srcset="img/logo-sm.png 1x, img/logo.png 3x" width="56" height="56" alt="Logotipo de Tatuajes Frank">
+          <span class="brand__text"><strong>Tatuajes Frank</strong><small>Tattoo Studio</small></span>
+        </a>
+        <p>Tatuajes personalizados en sombras, negro y escala de grises, creados con detalle y precisión.</p>
+        <div class="footer__social">
+          <a href="https://www.tiktok.com/@joelhdztattoos" class="icon-btn" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.500a3.500 3.500 0 1 1-3.500-3.500"/><path d="M14 3c.4 2.600 2.200 4.400 5 4.600"/></svg></a>
+          <a href="https://www.facebook.com/joelhernandez9005" class="icon-btn" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://wa.me/5213329270119" class="icon-btn" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.650-4.900A9 9 0 1 1 8 19.400L3 21z"/><path d="M9 9.500c0 3 2.500 5.500 5.500 5.500l1.200-1.400-2-1-.9.700a3.200 3.200 0 0 1-1.600-1.600l.7-.9-1-2L9 9.500z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Pie de página">
+        <h3>Navegación</h3>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#estilos">Estilos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Contacto</h3>
+        <a href="https://wa.me/5213329270119" target="_blank" rel="noopener">+52 1 33 2927 0119</a>
+        <a href="https://www.tiktok.com/@joelhdztattoos" target="_blank" rel="noopener">TikTok @joelhdztattoos</a>
+        <a href="https://www.facebook.com/joelhernandez9005" target="_blank" rel="noopener">Facebook</a>
+        <span>Isla Miramar, Edificio 18, Interior 8 (departamento)</span>
+        <span>[Lun - Sáb · 11:00 - 20:00]</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer__inner footer-bottom-inner">
+      <p>© <span id="year">2026</span> Tatuajes Frank. Todos los derechos reservados.</p>
+      <a href="https://kromdigital.github.io/Pagina-web/" target="_blank" rel="noopener" class="krom-credit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+        HECHO POR KROM DIGITAL
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Imagen ampliada">
+  <button class="lb__btn lb__close" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <button class="lb__btn lb__prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <figure class="lb__fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb__btn lb__next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<a href="https://wa.me/5213329270119" class="whatsapp" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-4.9A9 9 0 1 1 8 19.4L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.9.7a3.2 3.2 0 0 1-1.6-1.6l.7-.9-1-2L9 9.500z"/></svg>
+  <span>Escríbenos</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
