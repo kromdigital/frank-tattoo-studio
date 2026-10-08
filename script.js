@@ -17,6 +17,8 @@
   };
   burger.addEventListener('click', () => toggle(!nav.classList.contains('is-open')));
   nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => toggle(false)));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && nav.classList.contains('is-open')) toggle(false); });
+  matchMedia('(min-width: 1101px)').addEventListener('change', (e) => { if (e.matches) toggle(false); });
 
   /* Link activo según sección */
   const links = [...nav.querySelectorAll('a')];
